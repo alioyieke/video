@@ -1,133 +1,170 @@
 <div>
-    <div class="container col-xxl-8 px-4 py-5">
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span></span>
+                                <h2>Our Video Portfolio</h2>
+                                <a href="{{ route('portfolio') }}" class="primary-btn">See our collection</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
             </div>
-
-            <div class="container px-4 py-5" id="featured-3">
-                <h2 class="pb-2 border-bottom">Columns with icons</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="feature col">
-                    <div class="feature-icon bg-primary bg-gradient">
-                    <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span></span>
+                                <h2>For Script Writing</h2>
+                                <a href="{{ route('contact') }}" class="primary-btn">Contact us</a>
+                            </div>
+                        </div>
                     </div>
-                    <h2>Featured title</h2>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                    Call to action
-                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-                    </a>
                 </div>
-                <div class="feature col">
-                    <div class="feature-icon bg-primary bg-gradient">
-                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
-                    </div>
-                    <h2>Featured title</h2>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                    Call to action
-                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-                    </a>
-                </div>
-                <div class="feature col">
-                    <div class="feature-icon bg-primary bg-gradient">
-                    <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
-                    </div>
-                    <h2>Featured title</h2>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                    Call to action
-                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-                    </a>
-                </div>
-                </div>
-            </div>
-
-            <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom">Custom cards</h2>
-
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                        <small>Earth</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                        <small>3d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                        <small>Pakistan</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                        <small>4d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                        <small>California</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                        <small>5d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
             </div>
         </div>
+    </section>
+    <!-- Hero Section End -->
 
-        <div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
-      </div>
-    </div>
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Our services</span>
+                            <h2>What We do?</h2>
+                        </div>
+                        <p>If you hire a videographer of our team you will get a video professional to make a custom
+                            video for your business and, once the project is over.</p>
+                        <a href="#" class="primary-btn">View all services</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-1.png" alt="">
+                                </div>
+                                <h4>Motion graphics</h4>
+                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
+                                    post production services can put the finishing touches.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-2.png" alt="">
+                                </div>
+                                <h4>Scriptwriting and editing</h4>
+                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
+                                    post production services can put the finishing touches.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-3.png" alt="">
+                                </div>
+                                <h4>Video distribution</h4>
+                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
+                                    post production services can put the finishing touches.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-4.png" alt="">
+                                </div>
+                                <h4>Video hosting</h4>
+                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
+                                    post production services can put the finishing touches.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Work Section Begin -->
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-3.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="img/work/work-4.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-5.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-6.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
+                        <a href="{{ route('contact') }}">Start your stories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
 </div>

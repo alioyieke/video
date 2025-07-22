@@ -4,16 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class Inquiry extends Model
 {
     protected $fillable = [
-        'title',
-        'slug',
-        'description',
-        'video_url',
-        'image',
-        'category',
-        'client_id',
+        'name',
+        'email',
+        'phone',
+        'website',
+        'message',
     ];
 
     public function client()

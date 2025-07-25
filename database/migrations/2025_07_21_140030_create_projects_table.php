@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('video_url')->nullable();
             $table->string('image')->nullable();
             $table->string('category')->nullable();
-            $table->foreignId('client_id')->constrained('clients');
+            $table->foreignId('client_id')->nullable()->constrained('clients');
             $table->timestamps();
         });
     }

@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="{{ route('home') }}"><img src="img/logo.png" alt=""></a>
+                        {{-- <a href="{{ route('home') }}"><img src="img/logo.png" alt=""></a> --}}
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -82,7 +82,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__top__logo">
-                            <a href="{{ route('home') }}"><img src="img/logo.png" alt=""></a>
+                            {{-- <a href="{{ route('home') }}"><img src="img/logo.png" alt=""></a> --}}
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -107,7 +107,7 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="footer__option__item">
-                            <h5>Who we are</h5>
+                            <h5>Book session</h5>
                             <ul>
                                 <li><a href="{{ route('contact') }}">Contact us</a></li>
                             </ul>
@@ -117,8 +117,7 @@
                         <div class="footer__option__item">
                             <h5>Our work</h5>
                             <ul>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
+                                <li><a href="{{ route('portfolio') }}">Browse Portfolio</a></li>
                             </ul>
                         </div>
                     </div>
@@ -149,6 +148,32 @@
     <script src="{{ asset('js/jquery.slicknav.js') }}"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    
+    <script>
+        document.addEventListener('livewire:init', () => {
+            // Initialize background images on load
+            initBackgroundImages();
+
+            // Reinitialize after Livewire updates
+            Livewire.hook('commit', ({ component, commit }) => {
+                if (component.name === 'portfolio') {
+                    commit.finally(() => {
+                        initBackgroundImages();
+                    });
+                }
+            });
+
+            function initBackgroundImages() {
+                // Manually set background images for elements with set-bg class
+                document.querySelectorAll('.set-bg').forEach(el => {
+                    const bgUrl = el.getAttribute('data-setbg');
+                    if (bgUrl) {
+                        el.style.backgroundImage = `url('${bgUrl}')`;
+                    }
+                });
+            }
+        });
+    </script>
 
     @livewireScripts
 </body>

@@ -1,14 +1,8 @@
 <div>
-
-    @if(session()->has('message'))
-        <div class="alert alert-success mb-4">
-            {{ session('message') }}
-        </div>
-    @endif
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="{{ asset('img/hero/hero-1.jpg') }}">
+            <div class="hero__item set-bg" data-setbg="{{ asset('img/generated.jpg') }}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -21,7 +15,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="hero__item set-bg" data-setbg="{{ asset('img/generated.jpg') }}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -45,10 +39,10 @@
                     <div class="col-lg-4">
                         <div class="services__title">
                             <div class="section-title">
-                                <span>Our services</span>
+                                {{-- <span>Our services</span> --}}
                                 <h2>What We do?</h2>
                             </div>
-                            <a href="{{ route('contact') }}" class="primary-btn">View all services</a>
+                            <a href="{{ route('about') }}" class="primary-btn">View all services</a>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -113,7 +107,7 @@
         <!-- Work Section End -->
 
     <!-- Call To Action Section Begin -->
-    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
+    <section class="callto spad set-bg" data-setbg="{{ asset('img/callto-bg.jpg') }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">

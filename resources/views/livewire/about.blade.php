@@ -44,7 +44,7 @@
                 <div class="col-lg-6">
                     <div class="about__text">
                         <div class="section-title">
-                            <span>About videograph</span>
+                            {{-- <span>About videograph</span> --}}
                             <h2>WHo we are?</h2>
                         </div>
                         <div class="about__text__desc">

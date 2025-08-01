@@ -28,7 +28,7 @@
                         </div>
                         <div class="contact__widget__item__text">
                             <h4>Address</h4>
-                            <p>Los Angeles Gournadi, 1230 Bariasl</p>
+                            <p>Ongata Rongai</p>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                         </div>
                         <div class="contact__widget__item__text">
                             <h4>Hotline</h4>
-                            <p>1-677-124-44227 • 1-688-356-66889</p>
+                            <p>01124-44227 • 07256-66889</p>
                         </div>
                     </div>
                 </div>
@@ -64,11 +64,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <div class="contact__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808665729454!2d36.81768231475388!3d-1.2830363990559995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d71dcf0e91%3A0x4e377d182abc4a0f!2sNairobi%20Central%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1623760123456!5m2!1sen!2ske"
-                            height="450" style="border:0;"></iframe>
-                    </div>
+                    <div class="about__pic__item about__pic__item--large set-bg"
+                                    data-setbg="img/cinema.jpg"></div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__form">
